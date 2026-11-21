@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="OrangeHRM Automation Suite" parallel="tests" thread-count="3">
+    <listeners>
+        <listener class-name="listeners.TestListener"/>
+    </listeners>
+
+    <test name="Login Tests">
+        <classes>
+            <class name="tests.LoginTests"/>
+        </classes>
+    </test>
+
+    <test name="PIM Employee Tests">
+        <classes>
+            <class name="tests.PimTests"/>
+        </classes>
+    </test>
+
+    <test name="Admin and UI Tests">
+        <classes>
+            <class name="tests.AdminAndUiTests"/>
+        </classes>
+    </test>
+</suite>
